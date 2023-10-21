@@ -1,0 +1,121 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'css/homePage.css' %}">
+        <title>Ascent+</title>
+
+    </head>
+    <body id="canvas">
+        <div class="main">
+            <header>
+                <h1>
+                    <a href="{% url 'home' %}" class="home">
+                        <div class="logo one">Ascent+</div>
+                        <div class="logo two">Interactive</div>
+                    </a>
+                </h1>
+                <div class="pages">
+                    <a href="{% url 'home' %}" class="page-link">Home</a>
+                    <a href="{% url 'map' %}" class="page-link">Map</a>
+                    <a href="{% url 'aboutme' %}" class="page-link">About</a>
+                </div>
+                <div class="mobileMenu" style="display:none;" onclick="openMobileMenu()"></div>
+            </header>
+            <div class="banner">
+                
+                <div class="half">
+                    <h1 class="big-one">Interactive<br><span class="small-one">Maps</span></h1>
+                    <p class="details">Get around town better with the Interactive Maps project by Ascent!</p>
+                    <a href="{% url 'map' %}" class="start">Get Started</a>
+                </div>
+                <div class="half">
+                    <img class="bannerDecor" src="https://img.freepik.com/free-vector/business-team-putting-together-jigsaw-puzzle-isolated-flat-vector-illustration-cartoon-partners-working-connection-teamwork-partnership-cooperation-concept_74855-9814.jpg?w=1480&t=st=1666551711~exp=1666552311~hmac=809617f1ed968d03a5f27f72b66602dd739ef412cc8989f29d81476823f016d0">
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="heading">Why Use Interactive Maps?</h2>
+                <div></div>
+                <div class="wrapper">
+                <div class="thirds">
+                    <div class="box">
+                        <div class="trioHead">
+                            <div class="boxDecor one">
+                                <div class="boxDecorInner"></div>
+                            </div>
+                            <div>
+                                <div class="icon"></div>
+                                <div class="content">
+                                    <p> Find information about new locations! </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+
+                        <div class="detail">
+                            Input a location and use our Map UI to select different establishments to see various business in the area!
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="thirds">
+                    <div class="box">
+                        <div class="trioHead">
+                            <div class="boxDecor two">
+                                <div class="boxDecorInner"></div>
+                            </div>
+                            <div>
+                                <div class="icon"></div>
+                                <div class="content">
+                                    <p>Find opportunities for new businesses!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail">
+                            Use our UI to look at which areas lack certain establishments! This will allow you to find the best locations for new opportunities!
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="thirds">
+                    <div class="box">
+                        <div class="trioHead">
+                            <div class="boxDecor three">
+                                <div class="boxDecorInner"></div>
+                            </div>
+                            <div>
+                                <div class="icon"></div>
+                                <div class="content">
+                                    <p>Navigate your area!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                        <div class="detail">
+                            Turn on location settings to allow you to navigate to the nearest establishment to your location!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <script>
+            function openMobileMenu() {
+                var d = document.getElementById("canvas");
+                d.classList.toggle("mobileMenuActive");
+            }
+            
+        </script>
+    </body>
+</html>

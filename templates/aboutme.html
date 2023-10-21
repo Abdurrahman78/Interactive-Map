@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/aboutPage.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        <title>Ascent+</title>
+
+    </head>
+    <body id="canvas">
+        <div class="main">
+            <!-- Nav Bar -->
+            <header>
+                <h1>
+                    <a href="{% url 'home' %}" class="home">
+                        <div class="logo one">Ascent+</div>
+                        <div class="logo two">Interactive</div>
+                    </a>
+                </h1>
+                <div class="pages">
+                    <a href="{% url 'home' %}" class="page-link">Home</a>
+                    <a href="{% url 'map' %}" class="page-link">Map</a>
+                    <a href="{% url 'aboutme' %}" class="page-link">About</a>
+                </div>
+                <div class="mobileMenu" style="display:none;" onclick="openMobileMenu()"></div>
+              </header>
+
+              <!-- Basic html for our about me  -->
+            <div class="parent project-description">
+                <div class="f22 medium mb20">Why Interactive Maps? </div>
+                <p class="change-me">Have you ever thought about moving to a new location? Or perhaps starting your own business? Starting somewhere new can be scary, however, Interactive Maps got your back. Using our mapping tool, you'll be able to see different types of establishments and information about any area in NYC. With this, you'll know exactly what is around your area before you move in. If you are a new business owner, you'll be able to scout the area for any missing establishments, giving you the perfect opportunity. Or perhaps looking for a quick bite to eat? Our mapping tool allows you to filter resturants and allows you to find any resturants near you!</p>
+                <div class="avatarGroup">
+                    <div class="avatar colorOne">JZ</div>
+                    <div class="avatar colorTwo">RN</div>
+                    <div class="avatar colorThree">AB</div>
+                    <div class="avatar colorFour">AE</div>
+                    <div class="avatar colorFive">IM</div>
+                </div>
+            </div>
+            <div class="container parent pb0 pt30">
+                <div class="flex aCenter jSpaceBetween pad15">
+                    <div class="f22 medium">Meet The Team</div>
+                    <div class="cBlue">5 Members</div>
+                </div>
+                
+                <div class="wrapper">
+                    <div class="half">
+                        <div class="aboutBox">
+                            <div class="aboutHeader">
+                                <div class="avatar colorOne">JZ</div>
+                                <div class="aboutMeta">
+                                    <div class="medium">John Zhen</div>
+                                    <div>Software Intern</div>
+                                </div>
+                            </div>
+                            <div class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="half">
+                        <div class="aboutBox">
+                            <div class="aboutHeader">
+                                <div class="avatar colorTwo">RN</div>
+                                <div class="aboutMeta">
+                                    <div class="medium">Richard Ngo</div>
+                                    <div>Software Intern</div>
+                                </div>
+                            </div>
+                            <div class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="half">
+                        <div class="aboutBox">
+                            <div class="aboutHeader">
+                                <div class="avatar colorThree">AB</div>
+                                <div class="aboutMeta">
+                                    <div class="medium">Ariel Bazil</div>
+                                    <div>Software Intern</div>
+                                </div>
+                            </div>
+                            <div class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="half">
+                        <div class="aboutBox">
+                            <div class="aboutHeader">
+                                <div class="avatar colorFour">AE</div>
+                                <div class="aboutMeta">
+                                    <div class="medium">Abdurrahman Elkhadrawy</div>
+                                    <div>Software Intern</div>
+                                </div>
+                            </div>
+                            <div class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</div>
+                        </div>
+                        
+                    </div>
+                    <div class="half">
+                        <div class="aboutBox">
+                            <div class="aboutHeader">
+                                <div class="avatar colorFive">IM</div>
+                                <div class="aboutMeta">
+                                    <div class="medium">Irfan Mahmood</div>
+                                    <div>Software Intern</div>
+                                </div>
+                            </div>
+                            <div class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</div>
+                        </div>
+
+                        
+                    </div>
+
+               
+
+
+            
+                </div>
+            </div>
+
+    
+        </div>
+        <script>
+            function openMobileMenu() {
+                var d = document.getElementById("canvas");
+                d.classList.toggle("mobileMenuActive");
+            }
+            
+        </script>
+    </body>
+</html>
