@@ -15,14 +15,15 @@
 
 1. ### Launch the Website
    Navigate to https://interactive-map-7kyl.onrender.com/
+   Please allow 30-60 Seconds for the Website to load!
    
-2. ### Search for an Establishment
+3. ### Search for an Establishment
    Enter the type of establishment in the search bar or select from the available options.
 
-3. ### View Heatmap
+4. ### View Heatmap
    Click on the heatmap option to visualize the concentration of your chosen establishment in the vicinity.
    
-4. ### Calculate Distance
+5. ### Calculate Distance
    Simply click on the establishment of your choice, and we'll show you the distance from your current location.
 
 ## Technology Stack
