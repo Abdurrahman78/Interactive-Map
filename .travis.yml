@@ -1,0 +1,30 @@
+language: python
+
+python:
+- "3.9"
+
+services:
+  - xvfb
+
+addons:
+  chrome: stable
+
+env:
+- DJANGO=4.1.2
+
+install:
+  - wget -N https://chromedriver.storage.googleapis.com/107.0.5304.62/chromedriver_linux64.zip -P ~/
+  - unzip ~/chromedriver_linux64.zip -d ~/
+  - rm ~/chromedriver_linux64.zip
+  - sudo mv -f ~/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+  - pip install -r requirements.txt
+
+script:
+- export DJANGO_SECRETKEY=secret
+- python manage.py loaddata
+- black .
+- flake8 --max-line-length=200 .
+- coverage run manage.py test --noinput map
+- coveralls
