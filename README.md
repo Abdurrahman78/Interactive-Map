@@ -31,7 +31,7 @@
 * #### Backend: Django, Node.js
 * #### Frontend: HTML,CSS,Javascript
 * #### Database: PostgreSQL
-* #### Maps & Visualization: Mapbox
+* #### Maps & Visualization: Mapbox API and NYC OpenData Set
 
     
 
